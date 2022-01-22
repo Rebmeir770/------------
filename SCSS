@@ -1,0 +1,207 @@
+html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <div class="card">
+          <img src="tree1.jpg">
+          <div class="card_text"> 
+          <h3>This is a life tree</h3>
+          <p><span>Lorem ipsum dolor sit</span> amet, consectetur adipisicing elit. Optio, consequuntur at. Fugiat, alias. Unde vero voluptates, esse ipsa at dolor possimus. Corporis molestiae vitae deleniti exercitationem nesciunt autem doloribus aut.</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="box">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est autem reiciendis non? Quasi obcaecati itaque at eos iusto ut sint? Architecto tenetur minima perferendis ut accusamus repellendus quae dolores.</p>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        
+
+    </div>
+</body>
+</html>
+
+scss:
+body{
+    background-color: aqua;
+}
+ 
+.wrapper {
+    border: 1px solid navy;
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: navy;
+        margin: 1px;
+    
+        p {
+           color: white;
+           font-size: 6px;
+            
+        }
+
+    }
+}
+
+
+
+}
+
+.card{
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+
+
+    img{
+       border-radius: 10px 10px 0px 0px;
+       width: 100%;
+    }
+    // .card_text{
+    &_text{
+       padding: 20px;
+
+
+       h3{
+           font-style: italic;
+           //h3:hover
+           &:hover{
+               background-color: gray;
+           }
+        }
+            p{
+              color: rgb(80, 80, 80);
+              font-size: small;
+            
+
+            span{
+               font-weight: bold;
+            }
+        }
+
+    }
+}
+// .card{
+//     border-radius: 10px;
+//     background-color: white;
+//     margin: 10px;
+// }
+
+// .card img{
+//     border-radius: 10px 10px 0px 0px;
+//     width: 100%;
+// }
+
+// .card .card_text{
+//     padding: 20px;
+// }
+
+// .card_text h3{
+//     font-style: italic;
+// }
+//  .card_text p{
+//      color: rgb(80, 80, 80);
+//      font-size: small;
+//  }
+
+//  .card_text span{
+//      font-weight: bold;
+//  }
+
+
+
+
+
+// .wrapper{
+//     border: 1px solid navy;
+// }
+
+// .wrapper .box{
+//       width: 100px;
+//       height: 100px;
+//       background-color: navy;
+//       margin: 1px;
+// }
+
+// .wrapper .box p{
+//     color: white;
+//     font-size: 6px;
+    
+// }
+
+CSS:
+body {
+  background-color: aqua;
+}
+
+.wrapper {
+  border: 1px solid navy;
+}
+.wrapper .box {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  margin: 1px;
+}
+.wrapper .box p {
+  color: white;
+  font-size: 6px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+}
+.card img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+.card_text {
+  padding: 20px;
+}
+.card_text h3 {
+  font-style: italic;
+}
+.card_text h3:hover {
+  background-color: gray;
+}
+.card_text p {
+  color: #505050;
+  font-size: small;
+}
+.card_text p span {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+}
+.card img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+.card .card_text {
+  padding: 20px;
+}
+.card .card_text h3 {
+  font-style: italic;
+}
+.card .card_text p {
+  color: #505050;
+  font-size: small;
+}
+.card .card_text p span {
+  font-weight: bold;
+}
+
